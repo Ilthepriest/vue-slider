@@ -1,0 +1,88 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: white;
+}
+
+.container{
+    width: 50vw;
+    height: 50vh;
+    margin: 100px auto;
+    display: flex;
+}
+
+.container .square{
+    width: 80%;
+    height: 100%;
+    position: relative;
+}
+
+
+.container .square .scritte{
+    position: absolute;
+    right: 5px;
+    bottom: 5px;
+    padding: 20px;
+  }
+
+.container .square .scritte h2,
+.container .square .scritte p{
+    text-align: end;
+    font-size: 30px;
+}
+
+.container .square .scritte h2{
+    font-size: 50px;
+}
+
+.container .thumbs{
+    width: 20%;
+    height: 100%;
+    position: relative;
+}
+
+.container .thumbs .thumb{
+    width: 100%;
+    height: calc(100% / 5);
+}
+
+.container .thumbs .fa-circle-up{
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translate(-50%);
+    cursor: pointer;
+    
+}
+
+.container .thumbs .fa-circle-down{
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translate(-50%);
+    cursor: pointer;
+}
+
+.container .square img,
+.container .thumbs .thumb img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.bordo{
+    border: 4px solid white;
+}
+
+i{
+    font-size: 40px;
+    color: white;
+}
