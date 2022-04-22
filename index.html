@@ -22,8 +22,8 @@
             </div>
             <div class="thumbs">
                 <i class="fa-solid fa-circle-up" @click="clickDown"></i>
-                <div class="thumb" :class="index === selectedCountry ? 'bordo' : ''" v-for="(item, index) in country" @click="clickSize">
-                    <img v-bind:src= "item.image" alt="">
+                <div class="thumb" v-bind:class="index === selectedCountry ? 'bordo' : ''" v-for="(item, index) in country">
+                    <img v-bind:src= "item.image" alt="" @click="selectedCountry = index">
                 </div>
              
                 <i class="fa-solid fa-circle-down" @click="clickUp"></i>
